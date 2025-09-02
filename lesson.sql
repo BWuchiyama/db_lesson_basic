@@ -13,3 +13,15 @@ insert into reports (person_id, content)
 
 Q2
  ALTER TABLE people　ADD COLUMN department_id INT UNSIGNED NULL COMMENT '部署ID' AFTER email;
+
+Q3
+departments
+
+insert into departments (name)
+    -> values ('営業')
+    -> ('開発'),
+    -> ('経理'),
+    -> ('人事'),
+    -> ('情報システム');
+
+

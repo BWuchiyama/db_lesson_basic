@@ -24,4 +24,18 @@ insert into departments (name)
     -> ('人事'),
     -> ('情報システム');
 
+people
+
+insert into people (name, email, department_id, age, gender)
+    -> values('福岡けいじ', 'hukuoka@beyond-works.co.jp', 1, 28, 1),
+    -> ('柳田こうた', 'yanagida@beyond-works.co.jp', 1,35,1),
+    -> ('井上せいしろう', 'inoue@beyond-works.co.jp', 1,39,1),
+    -> ('及川けいこ', 'oikawa@beyond-works.co.jp', 2,40,2),
+    -> ('関みく', 'seki@beyond-works.co.jp', 2,37,2),
+    -> ('阿部たくと', 'abe@beyond-works.co.jp', 2,22,1),
+    -> ('穂刈きょうか', 'hokari@beyond-works.co.jp', 2,27,2),
+    -> ('多田としのり', 'tada@beyond-works.co.jp', 3,30,1),
+    -> ('安藤よしき', 'anndou@beyond-works.co.jp', 4,37,1),
+    -> ('本橋しょうこ', 'motohasi@beyond-works.co.jp', 5,20,2);
+
 

@@ -79,5 +79,50 @@ MariaDB [db_lesson]> update people
     -> end
     -> where person_id in (7,8,9,10,11,12,13,14,15,16);
 
+Q5
+MariaDB [db_lesson]> select age, gender, name from people where gender = 1 order by age desc;
+
+Q6
+
+SELECT
+  `name`, `email`, `age`
+FROM
+  `people`
+WHERE
+  `department_id` = 1
+ORDER BY
+  `created_at`;
+
+peopleテーブル内にあるdepartment_idが1のレコードのname,email,ageを表示してその際に表示するレコードの順番を、created_atの数字を昇順に表示するSQL
+
+Q7
+
+MariaDB [db_lesson]> select * from people
+    -> where age between 20 and 29 and gender = 2
+    -> or age between 40 and 49 and gender = 1
+    -> order by age;
+
+Q8
+
+ select * from people where department_id = 1;
+
+Q9
+
+select avg(age) as average_age from people
+    -> where gender = 2;
+
+Q10
+
+select p.name, d.name, r.content from people as p
+    -> inner join departments as d on p.department_id = d.departments_id
+    -> inner join reports as r on p.person_id = r.person_id;
+
+Q11
+
+ select p.name, r.content from people as p
+    -> left join reports as r on p.person_id = r.person_id
+    -> where r.content is null;
+
+
 
 

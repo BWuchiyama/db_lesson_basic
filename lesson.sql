@@ -38,4 +38,19 @@ insert into people (name, email, department_id, age, gender)
     -> ('安藤よしき', 'anndou@beyond-works.co.jp', 4,37,1),
     -> ('本橋しょうこ', 'motohasi@beyond-works.co.jp', 5,20,2);
 
+reports
+
+insert into reports (person_id, content)
+    -> values (7, '福岡けいじの日報　DBレッスン'),
+    -> (8, '柳田こうたの日報　DBレッスン'),
+    -> (9, '井上せいしろうの日報　DBレッスン'),
+    -> (10, '及川けいこの日報　DBレッスン'),
+    -> (11, '関みくの日報　DBレッスン'),
+    -> (12, '阿部たくとの日報　DBレッスン'),
+    -> (13, '穂刈きょうかの日報　DBレッスン'),
+    -> (14, '多田としのりの日報　DBレッスン'),
+    -> (15, '安藤よしきの日報　DBレッスン'),
+    -> (16, '本橋しょうこの日報　DBレッスン');
+
+
 

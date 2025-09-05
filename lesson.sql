@@ -52,5 +52,32 @@ insert into reports (person_id, content)
     -> (15, '安藤よしきの日報　DBレッスン'),
     -> (16, '本橋しょうこの日報　DBレッスン');
 
+Q4
+
+MariaDB [db_lesson]> update people
+    -> set department_id = case person_id
+    -> when 1 then 1
+    -> when 2 then 2
+    -> when 3 then 3
+    -> when 4 then 4
+    -> when 6 then 5
+    -> end;
+
+
+MariaDB [db_lesson]> update people
+    -> set department_id = case person_id
+    -> when 7 then 1
+    -> when 8 then 1
+    -> when 9 then 1
+    -> when 10 then 2
+    -> when 11 then 2
+    -> when 12 then 2
+    -> when 13 then 2
+    -> when 14 then 3
+    -> when 15 then 4
+    -> when 16 then 5
+    -> end
+    -> where person_id in (7,8,9,10,11,12,13,14,15,16);
+
 
 
